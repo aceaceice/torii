@@ -1,0 +1,30 @@
+.item {
+  border: 1px solid rgb(215, 213, 210);
+  border-radius: 20px;
+  word-wrap: break-word;
+  display: grid;
+  grid-template-rows: 260px repeat(6, 10%);
+  grid-template-columns: repeat(10, 10%);
+  overflow: hidden;
+}
+.item-image {
+  width: 100%;
+  grid-row: 1;
+}
+.name {
+  margin: 5px;
+  margin-left: 20px;
+  font-size: 36px;
+  grid-row: 2;
+  grid-column: 1/10;
+}
+.desc {
+  margin: 20px;
+  grid-row: 3;
+  grid-column: 1/10;
+  color: rgb(164, 168, 168);
+}
+.id {
+  grid-row: 5;
+  grid-column: 10;
+}

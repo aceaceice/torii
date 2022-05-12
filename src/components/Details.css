@@ -1,0 +1,84 @@
+.card {
+  background-color: white;
+  width: 40%;
+  height: 80%;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  border-radius: 20px;
+  z-index: 1000;
+  overflow: hidden;
+  margin: 0;
+  font-family: inherit;
+  display: grid;
+  grid-template-rows: repeat(10, 10%);
+  border: 1px solid rgb(215, 213, 210);
+  grid-template-columns: repeat(10, 10%);
+}
+.detail-name {
+  margin: 5px;
+  margin-left: 20px;
+  font-size: 36px;
+  grid-row: 6;
+  grid-column: 1/10;
+}
+.detail-desc {
+  margin: 20px;
+  grid-row: 7/9;
+  grid-column: 1/10;
+  color: rgb(164, 168, 168);
+}
+p {
+  font-weight: 400;
+}
+img {
+  width: 100%;
+  height: 100%;
+  grid-row: 1 / 6;
+  grid-column: 1/11;
+}
+.close {
+  position: absolute;
+  top: 2%;
+  left: 86%;
+  color: rgb(114, 122, 129);
+}
+.detail-owned {
+  font-size: 10px;
+  grid-row: 9;
+  grid-column: 1 / span 10;
+  text-align: center;
+}
+.send {
+  background-color: rgb(93, 130, 189);
+  font-size: 2vh;
+  color: rgb(223, 224, 233);
+  transition: all 0.2s;
+  overflow: auto;
+  padding-top: 3vh;
+  text-align: center;
+}
+.inact {
+  grid-row: 10;
+  grid-column: 1 / span 10;
+}
+.send:hover {
+  background-color: rgb(112, 143, 193);
+}
+.detail-input {
+  grid-row: 1;
+  grid-column: 1;
+}
+.form {
+  grid-row: 9/11;
+  grid-column: 1 / span 10;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: 100%;
+}
+.act {
+  grid-row: 2;
+}
+.send-loading {
+  text-align: center;
+}
